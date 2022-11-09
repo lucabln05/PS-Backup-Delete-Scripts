@@ -7,7 +7,7 @@ $username   = 'dlpuser'                     # ftp user
 $password   = 'rNrKYTX9g7z3RgJRmxWuGHbeu'   # ftp password
 
 # alle dateien die älter als 48 stunden sind werden ausgelsen
-$files = Get-ChildItem -Path . -Filter *.zip -Recurse | Where-Object { $_.LastWriteTime -gt(Get-Date).AddHours(-48) -and $_.LastWriteTime.DayOfWeek -ne 'Saturday' -and $_.LastWriteTime.DayOfWeek -ne 'Sunday' }
+$files = Get-ChildItem -Path . -Filter *.zip -Recurse | Where-Object { $_.LastWriteTime -gt(Get-Date).AddHours(48) -and $_.LastWriteTime.DayOfWeek -ne 'Saturday' -and $_.LastWriteTime.DayOfWeek -ne 'Sunday' }
 
 #gibt die dateien dem user aus (somit kann er die überprüfen)
 $files | ForEach-Object { $_.FullName }
