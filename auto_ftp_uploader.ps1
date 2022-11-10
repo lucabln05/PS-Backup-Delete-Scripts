@@ -1,4 +1,4 @@
-# dieses Script lädt dateinen die älter als 48 stunden sind auf einen ftp server (ausgenommen wochenende)
+# dieses Script lädt dateinen die älter als 48 stunden sind auf einen ftp server (ausgenommen wochenende(F;S;S))
 # docs https://renenyffenegger.ch/notes/Microsoft/dot-net/namespaces-classes/System/Net/WebClient/UploadFile;
 # test ftp server : https://dlptest.com/ftp-test/
 
