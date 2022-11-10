@@ -1,5 +1,5 @@
 
-# Dieses Script splitet log.txt wenn "ROBOCOPY     ::     Robust File Copy for Windows"
+# Dieses Script splitet log.txt wenn "ROBOCOPY"
 #und löscht alle abschnitte auser dem letzten
 
 
