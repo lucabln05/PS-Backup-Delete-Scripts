@@ -7,7 +7,7 @@ $username   = 'dlpuser'                     # ftp user
 $password   = 'rNrKYTX9g7z3RgJRmxWuGHbeu'   # ftp password
 
 # alle dateien die älter als 48 stunden sind werden ausgelesen (im pfad wo das script liegt)
-$files = Get-ChildItem -Path . -Filter *.zip -Recurse | Where-Object { $_.LastWriteTime -lt(Get-Date).AddHours(-8)}
+$files = Get-ChildItem -Path . -Filter *.zip -Recurse | Where-Object { $_.LastWriteTime -lt(Get-Date).AddHours(-48)}
 
 
 # wenn heute freitag, samstag oder sonntag ist, dann wird das script beendet
